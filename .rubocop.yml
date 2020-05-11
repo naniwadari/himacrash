@@ -1,0 +1,55 @@
+require:
+  - rubocop-rails
+
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "vendor/**/*"
+    - "bin/**/*"
+    - "node_modules/**/*"
+    - "Gemfile"
+    - "config/**/*"
+    - "test/**/*"
+  DisplayCopNames: true
+
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - "lib/tasks/*"
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: false
+
+Lint/StructNewOverride:
+  Enabled: false
+
+Style/ExponentialNotation:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: false
+
+Style/HashTransformValues:
+  Enabled: false
+
+#日本語でのコメントを許可
+AsciiComments:
+  Enabled: false
