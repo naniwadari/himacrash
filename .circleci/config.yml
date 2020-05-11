@@ -7,6 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-        name: which bundler?
-        command: bundle -v
+          name: which bundler?
+          command: bundle -v
       - ruby/bundle-install
